@@ -1,0 +1,18 @@
+
+<h1>Make a new student</h1>
+
+<%= form_tag '/students'%>
+
+    <%= label_tag "First name:"%>
+    <%= text_field_tag :'student[first_name]'%>
+
+    <%= label_tag "Last name:"%>
+    <%= text_field_tag :'student[last_name]'%>
+
+    <%= submit_tag "Submit Student"%>
+
+
+Student Form:
+<%= @student.to_s %>
+
+    
